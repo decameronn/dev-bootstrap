@@ -50,7 +50,7 @@ list_of_movies = [
     ("stalker", 1979, "drama"),
     # adding a new movie
     ("pandorum", 2009, "sci-fi") 
-        ]
+]
 
 movie_rating = {
     "interstellar": 8.7,
@@ -58,5 +58,5 @@ movie_rating = {
     "stalker": 8.0,
     # a new movie
     "pandorum": 6.7
-        }
+}
 
