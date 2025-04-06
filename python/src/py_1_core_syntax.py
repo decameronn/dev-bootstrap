@@ -42,6 +42,21 @@ fav_movie = { "inception": 2010 }
 # 3. Create a tuple for the coordinates of your favorite place.
 fav_place  = (40.7128, 74.0060) 
 
+# 4. Description should be deduced from the code
+# list of movies (tuples)
+list_of_movies = [
+    ("interstellar", 2014, "sci-fi"),
+    ("matrix", 1999, "sci-fi"),
+    ("stalker", 1979, "drama"),
+    # adding a new movie
+    ("pandorum", 2009, "sci-fi") 
+]
 
-
+movie_rating = {
+    "interstellar": 8.7,
+    "matrix": 8.7,
+    "stalker": 8.0,
+    # a new movie
+    "pandorum": 6.7
+}
 
