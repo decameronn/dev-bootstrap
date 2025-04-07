@@ -33,11 +33,10 @@ movie_ratings = {
     "pandorum": 6.7
 }
 for movie in movie_ratings:
-    if movie == "pandorum":
-        if movie_ratings[movie] >= 7.0:
-            print("Great movie!")
-        else:
-            print("Not so great.")
+      if movie_ratings["pandorum"] >= 7.0:
+          print("Great movie!")
+      else:
+          print("Not so great.")
 
 # 2. Loop through list_of_movies and print each title
 #    with the text " is in your collection!"
