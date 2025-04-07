@@ -60,3 +60,13 @@ movie_rating = {
     "pandorum": 6.7
 }
 
+# 5. Access the 2nd movie from list_of_movies
+second_movie = list_of_movies[1]
+print(second_movie)
+
+# 6. Access the rating of "stalker" from movie_rating
+rating_stalker = movie_rating["matrix"]
+print(rating_stalker)
+
+# 7. Update the rating of a movie
+movie_rating["pandorum"] = 8.3
