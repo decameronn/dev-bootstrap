@@ -68,4 +68,5 @@ print(second_movie)
 rating_stalker = movie_rating["matrix"]
 print(rating_stalker)
 
-
+# 7. Update the rating of a movie
+movie_rating["pandorum"] = 8.3
