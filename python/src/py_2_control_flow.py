@@ -53,7 +53,7 @@ for m in list_of_movies:
 for title, year, genre in list_of_movies:
     if title.lower() in movie_ratings:
         rating = movie_ratings[title.lower()]
-        capitalized_title = title.capitalize()
+        capitalized_title = title.title()
         if rating >= 8.5:
             print(f"{capitalized_title}, released in {year}, is a masterpiece!")
         elif 7.0 <= rating < 8.5:
