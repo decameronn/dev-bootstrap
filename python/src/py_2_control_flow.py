@@ -50,18 +50,14 @@ for m in list_of_movies:
     print(m[0], "is in your collection!\n")
 
 # 3. Reuse list_of_movies and movie_ratings
-for movie in list_of_movies:
-    movie_title = movie[0]
-    movie_year = movie[1]
-    movie_genre = movie[2]
-    movie_capitalized = movie_title.capitalize()
-    
-    if movie_title in movie_ratings:
-        rating = movie_ratings[movie_title]
+for title, year, genre in list_of_movies:
+    movie_capitalized = title.capitalize()
+    if title in movie_ratings:
+        rating = movie_ratings[title]
         if rating >= 8.5:
-            print(f"{movie_capitalized}, released in {movie_year}, is a masterpiece!")
+            print(f"{movie_capitalized}, released in {year}, is a masterpiece!")
         elif 7.0 <= rating < 8.5:
-            print(f"{movie_capitalized}, released in {movie_year}, is worth watching.")
+            print(f"{movie_capitalized}, released in {year}, is worth watching.")
         else:
-            print(f"{movie_capitalized}, released in {movie_year}, might not be for everyone.")
+            print(f"{movie_capitalized}, released in {year}, might not be for everyone.")
 
