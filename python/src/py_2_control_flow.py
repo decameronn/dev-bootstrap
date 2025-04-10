@@ -34,9 +34,9 @@ movie_ratings = {
 }
 for movie in movie_ratings:
     if movie_ratings["pandorum"] >= 7.0:
-        print("Great movie!")
+        print("Great movie!\n")
     else:
-        print("Not so great.")
+        print("Not so great.\n")
 
 # 2. Loop through list_of_movies and print each title
 #    with the text " is in your collection!"
@@ -47,5 +47,21 @@ list_of_movies = [
     ("pandorum", 2009, "sci-fi") 
 ]
 for m in list_of_movies:
-    print(m[0], "is in your collection!")
+    print(m[0], "is in your collection!\n")
+
+# 3. Reuse list_of_movies and movie_ratings
+for movie in list_of_movies:
+    movie_title = movie[0]
+    movie_year = movie[1]
+    movie_genre = movie[2]
+    movie_capitalized = movie_title.capitalize()
+    
+    if movie_title in movie_ratings:
+        rating = movie_ratings[movie_title]
+        if rating >= 8.5:
+            print(f"{movie_capitalized}, released in {movie_year}, is a masterpiece!")
+        elif 7.0 <= rating < 8.5:
+            print(f"{movie_capitalized}, released in {movie_year}, is worth watching.")
+        else:
+            print(f"{movie_capitalized}, released in {movie_year}, might not be for everyone.")
 
