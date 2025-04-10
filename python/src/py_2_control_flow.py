@@ -51,13 +51,13 @@ for m in list_of_movies:
 
 # 3. Reuse list_of_movies and movie_ratings
 for title, year, genre in list_of_movies:
-    movie_capitalized = title.capitalize()
-    if title in movie_ratings:
-        rating = movie_ratings[title]
+    if title.lower() in movie_ratings:
+        rating = movie_ratings[title.lower()]
+        capitalized_title = title.capitalize()
         if rating >= 8.5:
-            print(f"{movie_capitalized}, released in {year}, is a masterpiece!")
+            print(f"{capitalized_title}, released in {year}, is a masterpiece!")
         elif 7.0 <= rating < 8.5:
-            print(f"{movie_capitalized}, released in {year}, is worth watching.")
+            print(f"{capitalized_title}, released in {year}, is worth watching.")
         else:
-            print(f"{movie_capitalized}, released in {year}, might not be for everyone.")
+            print(f"{capitalized_title}, released in {year}, might not be for everyone.")
 
